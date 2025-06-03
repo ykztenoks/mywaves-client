@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.form-input {
+  @apply border-slate-400 border-2 rounded-md;
+}
+
+.center {
+  @apply flex items-center justify-center;
+}
