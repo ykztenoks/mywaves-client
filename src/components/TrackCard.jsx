@@ -23,7 +23,7 @@ function TrackCard({ track, setTracks }) {
     }
   }
   return (
-    <div className="center flex-col gap-4 border-2 border-slate-400 rounded-md">
+    <div className="center flex-col gap-4 shadow-md rounded-md pt-2">
       <h3>
         song: <span>{track.title}</span>
       </h3>

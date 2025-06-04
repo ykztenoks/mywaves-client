@@ -1,4 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-quicksand: "Quicksand", sans-serif;
+}
+
+* {
+  @apply font-quicksand font-medium;
+}
+
+body:not(nav) {
+  @apply mt-20;
+}
 
 .form-input {
   @apply border-slate-400 border-2 rounded-md;
@@ -6,4 +19,16 @@
 
 .center {
   @apply flex items-center justify-center;
+}
+
+body {
+  @apply bg-[#EAE5DD];
+}
+
+.hover {
+  @apply hover:text-orange-800 transition-all duration-500 ease-in-out;
+}
+
+.scaleup {
+  @apply hover:scale-105 transition-all ease-in-out duration-300;
 }
